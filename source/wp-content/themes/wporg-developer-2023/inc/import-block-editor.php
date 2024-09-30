@@ -64,6 +64,13 @@ class DevHub_Block_Editor_Importer extends DevHub_Docs_Importer {
 			'reference-guides/block-api/versions'                 => 'reference-guides/block-api/block-api-versions',
 			'reference-guides/packages/packages-experiments'      => 'reference-guides/packages/packages-private-apis',
 
+			// After Navigator restructuring, September 2024.
+			'reference-guides/components/navigator-back-button'      => 'reference-guides/components/navigator',
+			'reference-guides/components/navigator-button'           => 'reference-guides/components/navigator',
+			'reference-guides/components/navigator-provider'         => 'reference-guides/components/navigator',
+			'reference-guides/components/navigator-screen'           => 'reference-guides/components/navigator',
+			'reference-guides/components/navigator-to-parent-button' => 'reference-guides/components/navigator',
+
 			// After IAPI restructuring, April 2024.
 			'reference-guides/packages/packages-interactivity/packages-interactivity-api-reference' => 'reference-guides/interactivity-api/api-reference',
 
