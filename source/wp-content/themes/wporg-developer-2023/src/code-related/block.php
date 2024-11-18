@@ -41,6 +41,8 @@ function render( $attributes, $content, $block ) {
 		return '';
 	}
 
+	return '';
+
 	$uses        = null;
 	$used_by     = null;
 	$has_uses    = false;

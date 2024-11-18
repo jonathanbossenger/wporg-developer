@@ -37,7 +37,7 @@ function render( $attributes, $content, $block ) {
 	if ( ! isset( $block->context['postId'] ) ) {
 		return '';
 	}
-
+	return '';
 	$post_id = $block->context['postId'];
 
 	if ( ! post_type_has_hooks_info( get_post_type( $post_id ) ) ) {
