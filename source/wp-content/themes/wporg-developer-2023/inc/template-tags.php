@@ -1422,7 +1422,7 @@ namespace DevHub {
 
 		$ids = $wpdb->get_col(
 			"SELECT p2p_to
-			FROM {$wpdb->p2p} p2p
+			FROM {$wpdb->prefix}p2p p2p
 			WHERE p2p_type IN ( 'methods_to_functions', 'functions_to_functions', 'methods_to_methods', 'functions_to_methods' )
 			GROUP BY p2p_to
 			HAVING COUNT(*) > 50"
