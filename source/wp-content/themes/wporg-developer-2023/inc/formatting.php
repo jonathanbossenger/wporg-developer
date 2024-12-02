@@ -447,8 +447,8 @@ class DevHub_Formatting {
 
 								// Only link actually parsed methods.
 								$args = array(
-									'post_type' => 'wp-parser-method',
-									'name' => $name,
+									'post_type'      => 'wp-parser-method',
+									'name'           => str_replace( '::', '-', $name ),
 									'posts_per_page' => 1,
 								);
 								
