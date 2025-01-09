@@ -1530,8 +1530,9 @@ namespace DevHub {
 		}
 
 		// Find just the relevant source code
-		$source_code = '';
-		$handle = @fopen( get_source_code_root_dir() . $source_file, 'r' );
+		$source_code  = '';
+		$file_on_disk = get_source_code_root_dir() . $source_file;
+		$handle       = file_exists( $file_on_disk ) ? fopen( $file_on_disk, 'r' ) : false;
 		if ( $handle ) {
 			$line = -1;
 			while ( ! feof( $handle ) ) {
